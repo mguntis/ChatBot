@@ -22,7 +22,7 @@ restService.post('/echo', function(req, res) {
             speech = "If you need information about immigration to UK please say YES";
             break;
         default:
-            speech = "We have't information about immigration to ${geoCountry} ";
+            speech = `We have't information about immigration to ${geoCountry} `;
     }
 
     return res.json({
