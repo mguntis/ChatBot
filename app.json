@@ -1,6 +1,6 @@
 {
-  "name": "Webhook-echo-sample",
-  "description": "Webhook echo sample",
-  "repository": "https://github.com/SunilSyal/Webhook-and-API.AI-Samples.git",
+  "name": "My-first-chatbot",
+  "description": "My first chatbot",
+  "repository": "https://github.com/mguntis/ChatBot.git",
   "keywords": ["api.ai", "natural language"]
 }
