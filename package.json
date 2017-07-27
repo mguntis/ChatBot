@@ -1,12 +1,12 @@
 {
-  "name": "webhook-echo-sample",
+  "name": "my-first-chatbot",
   "version": "1.0.0",
-  "description": "Webhook echo sample",
+  "description": "My first chatbot",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Sunil Syal",
+  "author": "Guntis Mosans",
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4"
