@@ -14,6 +14,7 @@ restService.use(bodyParser.json());
 restService.post('/echo', function(req, res) {
     let speech = "";
     switch (req.body.result.metadata.intentName ) {
+        case "workpermit.immigrate_to_context":
         case "workpermit.immigrate_to":
             let country = req.body.result && req.body.result.parameters && req.body.result.parameters.geoCountry ? req.body.result.parameters.geoCountry : "Seems like some problem. Speak again.";
 
