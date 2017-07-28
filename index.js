@@ -37,12 +37,6 @@ restService.post('/echo', function(req, res) {
                 default:
                     speech = "We have no information about immigration to " + country;
             }
-
-            return res.json({
-                speech: speech,
-                displayText: speech,
-                source: 'my-first-chatbot'
-            });
             break;
 
         case "workpermit.visa":
@@ -53,8 +47,14 @@ restService.post('/echo', function(req, res) {
             } else {
                 speech = "You need info about " + visa + "?";
             }
-
+            break;
     }
+
+    return res.json({
+        speech: speech,
+        displayText: speech,
+        source: 'my-first-chatbot'
+    });
 });
 
 restService.listen((process.env.PORT || 8000), function() {
