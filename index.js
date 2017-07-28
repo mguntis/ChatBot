@@ -34,7 +34,7 @@ restService.post('/echo', function(req, res) {
                     "http://www.workpermit.com/immigration/canada";
                 break;
             default:
-                speech = "We have't information about immigration to " + country;
+                speech = "We have no information about immigration to " + country;
         }
 
         return res.json({
