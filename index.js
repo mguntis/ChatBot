@@ -18,10 +18,20 @@ restService.post('/echo', function(req, res) {
 
         switch (country) {
             case "United States of America":
-                speech = "If you need information about immigration to US please say YES";
+                speech = "Info about immigration to US -> " +
+                    "http://www.workpermit.com/immigration/usa";
                 break;
             case "United Kingdom of Great Britain and Northern Ireland":
-                speech = "If you need information about immigration to UK please say YES";
+                speech = "Info about immigration to US -> " +
+                    "http://www.workpermit.com/immigration/united-kingdom";
+                break;
+                case "Australia":
+                speech = "Info about immigration to Australia -> " +
+                    "http://www.workpermit.com/immigration/australia";
+                break;
+                case "Canada":
+                speech = "Info about immigration to Canada -> " +
+                    "http://www.workpermit.com/immigration/canada";
                 break;
             default:
                 speech = "We have't information about immigration to " + country;
