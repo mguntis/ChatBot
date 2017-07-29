@@ -46,6 +46,9 @@ restService.post('/echo', function(req, res) {
             let visaCountry = req.body.result.parameters.visaCountry;
             if (visaCountry === ""){
                 switch (visa) {
+                    case "visa":
+                        speech = "What type of visa?";
+                        break;
                     case "Tier 1":
                         speech = visa + " is UK highly skilled worker visa";
                         break;
@@ -96,7 +99,7 @@ restService.post('/echo', function(req, res) {
                                 speech = "You mean " + visa + ": tempory worker visa?";
                                 break;
                             default:
-                                speech = "Sorry we have no information about visas in this country!";
+                                speech = "Sorry we have no information about this visa in this country!";
                         }
                         break;
                     default:
