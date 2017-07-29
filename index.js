@@ -41,7 +41,7 @@ restService.post('/echo', function(req, res) {
             break;
 
         case "workpermit.visa":
-            let visa = req.body.result && req.body.result.parameters && req.body.result.parameters.visa ? req.body.result.parameters.visa : "Seems like some problem. Speak again.";
+            let visa = req.body.result && req.body.result.parameters && req.body.result.parameters.visa ? req.body.result.parameters.visa : "this type visa";
             let visaCountry = req.body.result.parameters.visaCountry;
             if (visaCountry === ""){
                 speech = "About which country you need information?"
@@ -80,7 +80,7 @@ restService.post('/echo', function(req, res) {
                                 speech = "You mean " + visa + ": tempory worker visa?";
                                 break;
                             default:
-                                speech = "Sorry we have no information about " + visa;
+                                speech = "Sorry we have no information about visas in this country!";
                         }
                         break;
                     default:
