@@ -47,16 +47,16 @@ restService.post('/echo', function(req, res) {
             if (visaCountry === ""){
                 switch (visa) {
                     case "Tier 1":
-                        speech = "You mean " + visa + ": highly skilled worker visa?";
+                        speech = visa + " is UK highly skilled worker visa";
                         break;
                     case "Tier 2":
-                        speech = "You mean " + visa + ": skilled worker visa?";
+                        speech = visa + " is UK skilled worker visa";
                         break;
                     case "Tier 4":
-                        speech = "You mean " + visa + ": student visa?";
+                        speech = visa + " is UK student visa";
                         break;
                     case "Tier 5":
-                        speech = "You mean " + visa + ": tempory worker visa?";
+                        speech = visa + " is UK tempory worker visa";
                         break;
                     default:
                         speech = "About which country you need information?";
