@@ -41,12 +41,52 @@ restService.post('/echo', function(req, res) {
             break;
 
         case "workpermit.visa":
+        case "workpermit.visa_country":
             let visa = req.body.result && req.body.result.parameters && req.body.result.parameters.visa ? req.body.result.parameters.visa : "Seems like some problem. Speak again.";
             let visaCountry = req.body.result.parameters.visaCountry;
             if (visaCountry === ""){
                 speech = "About which country you need information?"
             } else {
-                speech = "You need info about " + visa + "?";
+                switch (visaCountrys){
+                    case "United Kingdom of Great Britain and Northern Ireland":
+                        switch (visa){
+                            case "Tier 1":
+                                speech = "You mean " + visa + ": highly skilled worker visa?";
+                                break;
+                            case "Tier 2":
+                                speech = "You mean " + visa + ": skilled worker visa?";
+                                break;
+                            case "Tier 4":
+                                speech = "You mean " + visa + ": student visa?";
+                                break;
+                            case "Tier 5":
+                                speech = "You mean " + visa + ": tempory worker visa?";
+                                break;
+                            default:
+                                speech = "Sorry we have no information about " + visa;
+                        }
+                        break;
+                    case "United States of America":
+                        switch (visa){
+                            case "E2":
+                                speech = "You mean " + visa + ": highly skilled worker visa?";
+                                break;
+                            case "E1":
+                                speech = "You mean " + visa + ": skilled worker visa?";
+                                break;
+                            case "E3":
+                                speech = "You mean " + visa + ": student visa?";
+                                break;
+                            case "L1":
+                                speech = "You mean " + visa + ": tempory worker visa?";
+                                break;
+                            default:
+                                speech = "Sorry we have no information about " + visa;
+                        }
+                        break;
+                    default:
+                        speech = "At the moment we have no information about this country visas!";
+                }
             }
             break;
     }
