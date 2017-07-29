@@ -41,9 +41,10 @@ restService.post('/echo', function(req, res) {
             break;
 
         case "workpermit.visa":
+        case "workpermit.visa_country":
             let visa = req.body.result && req.body.result.parameters && req.body.result.parameters.visa ? req.body.result.parameters.visa : "this type visa";
             let visaCountry = req.body.result.parameters.visaCountry;
-            if (visaCountry === ""){
+            if (visaCountry === "" && visa !=="Tier 1"&& visa !=="Tier 2"&& visa !=="Tier 4"&& visa !=="Tier 5"){
                 speech = "About which country you need information?"
             } else {
                 switch (visaCountry){
