@@ -70,19 +70,19 @@ restService.post('/echo', function(req, res) {
                         switch (visa){
                             case "Tier 1":
                             case "highly skilled worker visa":
-                                speech = "You mean Tier 1: highly skilled worker visa?";
+                                speech = "It is Tier 1: highly skilled worker visa";
                                 break;
                             case "Tier 2":
                             case "skilled worker visa":
-                                speech = "You mean Tier 2: skilled worker visa?";
+                                speech = "It is Tier 2: skilled worker visa";
                                 break;
                             case "Tier 4":
                             case "student visa":
-                                speech = "You mean Tier 4: student visa?";
+                                speech = "It is Tier 4: student visa";
                                 break;
                             case "Tier 5":
                             case "tempory worker visa":
-                                speech = "You mean Tier 5: tempory worker visa?";
+                                speech = "It is Tier 5: tempory worker visa";
                                 break;
                             default:
                                 speech = "At the moment we have information about Tier 1, Tier 2, Tier 4 and Tier 5 visa";
@@ -91,16 +91,16 @@ restService.post('/echo', function(req, res) {
                     case "United States of America":
                         switch (visa){
                             case "E2":
-                                speech = "You mean " + visa + ": treaty investor visa?";
+                                speech = "It is E2: treaty investor visa";
                                 break;
                             case "E1":
-                                speech = "You mean " + visa + ": treaty trader visa?";
+                                speech = "It is E1: treaty trader visa?";
                                 break;
                             case "E3":
-                                speech = "You mean " + visa + ": specialty occupation professionals visa?";
+                                speech = "It is E3: specialty occupation professionals visa?";
                                 break;
                             case "L1":
-                                speech = "You mean " + visa + ": intra-company transferee visa?";
+                                speech = "It is L1: intra-company transferee visa?";
                                 break;
                             default:
                                 speech = "Sorry we have no information about this visa in this country, yet!";
