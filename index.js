@@ -50,17 +50,20 @@ restService.post('/echo', function(req, res) {
                         speech = "What type of visa?";
                         break;
                     case "Tier 1":
-                        speech = 'In order to get a Tier 1 please contact us at london@workpermit.com or read more about it https://goo.gl/dgepSH ';
-                            // visa + " is UK highly skilled worker visa";
+                        speech = 'In order to get a Tier 1 please contact us at london@workpermit.com '+
+                            'or read more about it https://goo.gl/dgepSH ';
                         break;
                     case "Tier 2":
-                        speech = 'In order to get a Tier 2 please contact us at london@workpermit.com or read more about it https://goo.gl/aFktuc ';
+                        speech = 'In order to get a Tier 2 please contact us at london@workpermit.com '+
+                            'or read more about it https://goo.gl/aFktuc ';
                         break;
                     case "Tier 4":
-                        speech = 'In order to get a Tier 4 please contact us at london@workpermit.com or read more about it https://goo.gl/mBi7Ro ';
+                        speech = 'In order to get a Tier 4 please contact us at london@workpermit.com '+
+                            'or read more about it https://goo.gl/mBi7Ro ';
                         break;
                     case "Tier 5":
-                        speech = 'In order to get a Tier 5 please contact us at london@workpermit.com or read more about it https://goo.gl/7NRXF1 ';
+                        speech = 'In order to get a Tier 5 please contact us at london@workpermit.com '+
+                            'or read more about it https://goo.gl/7NRXF1 ';
                         break;
                     default:
                         speech = "About which country you need information?";
@@ -71,19 +74,23 @@ restService.post('/echo', function(req, res) {
                         switch (visa){
                             case "Tier 1":
                             case "highly skilled worker visa":
-                                speech = "It is Tier 1: highly skilled worker visa";
+                                speech = 'In order to get a Tier 1 please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/dgepSH ';
                                 break;
                             case "Tier 2":
                             case "skilled worker visa":
-                                speech = "It is Tier 2: skilled worker visa";
+                                speech = 'In order to get a Tier 2 please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/aFktuc ';
                                 break;
                             case "Tier 4":
                             case "student visa":
-                                speech = "It is Tier 4: student visa";
+                                speech = 'In order to get a Tier 4 please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/mBi7Ro ';
                                 break;
                             case "Tier 5":
                             case "tempory worker visa":
-                                speech = "It is Tier 5: temporary worker visa";
+                                speech = 'In order to get a Tier 5 please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/7NRXF1 ';
                                 break;
                             default:
                                 speech = "At the moment we have information about Tier 1, Tier 2, Tier 4 and Tier 5 visas";
@@ -92,16 +99,20 @@ restService.post('/echo', function(req, res) {
                     case "United States of America":
                         switch (visa){
                             case "E2":
-                                speech = "It is E2: treaty investor visa";
+                                speech = 'In order to get a E2 visa please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/C9aeVn ';
                                 break;
                             case "E1":
-                                speech = "It is E1: treaty trader visa?";
+                                speech = 'In order to get a E1 visa please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/ifAzp7 ';
                                 break;
                             case "E3":
-                                speech = "It is E3: specialty occupation professionals visa?";
+                                speech = 'In order to get a E3 visa please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/qrQmuc ';
                                 break;
                             case "L1":
-                                speech = "It is L1: intra-company transferee visa?";
+                                speech = 'In order to get a L1 visa please contact us at london@workpermit.com '+
+                                    'or read more about it https://goo.gl/SQvXaj ';
                                 break;
                             default:
                                 speech = "Sorry we have no information about this visa in this country, yet!";
