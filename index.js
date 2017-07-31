@@ -116,6 +116,7 @@ restService.post('/echo', function(req, res) {
                                 break;
                             case "F-1":
                             case "M-1":
+                            case "student visa":
                                 speech = 'In order to get a F-1 or M-1 visa please contact us at london@workpermit.com '+
                                     'or read more about it at https://goo.gl/AgH8PQ ';
                                 break;
