@@ -20,19 +20,19 @@ restService.post('/echo', function(req, res) {
 
             switch (country) {
                 case "United States of America":
-                    speech = "Info about immigration to US -> " +
+                    speech = "Information about immigration to USA -> " +
                         "http://www.workpermit.com/immigration/usa";
                     break;
                 case "United Kingdom of Great Britain and Northern Ireland":
-                    speech = "Info about immigration to UK -> " +
+                    speech = "Information about immigration to UK -> " +
                         "http://www.workpermit.com/immigration/united-kingdom";
                     break;
                     case "Australia":
-                    speech = "Info about immigration to Australia -> " +
+                    speech = "Information about immigration to Australia -> " +
                         "http://www.workpermit.com/immigration/australia";
                     break;
                     case "Canada":
-                    speech = "Info about immigration to Canada -> " +
+                    speech = "Information about immigration to Canada -> " +
                         "http://www.workpermit.com/immigration/canada";
                     break;
                 default:
@@ -59,7 +59,7 @@ restService.post('/echo', function(req, res) {
                         speech = visa + " is UK student visa";
                         break;
                     case "Tier 5":
-                        speech = visa + " is UK tempory worker visa";
+                        speech = visa + " is UK temporary worker visa";
                         break;
                     default:
                         speech = "About which country you need information?";
@@ -82,10 +82,10 @@ restService.post('/echo', function(req, res) {
                                 break;
                             case "Tier 5":
                             case "tempory worker visa":
-                                speech = "It is Tier 5: tempory worker visa";
+                                speech = "It is Tier 5: temporary worker visa";
                                 break;
                             default:
-                                speech = "At the moment we have information about Tier 1, Tier 2, Tier 4 and Tier 5 visa";
+                                speech = "At the moment we have information about Tier 1, Tier 2, Tier 4 and Tier 5 visas";
                         }
                         break;
                     case "United States of America":
