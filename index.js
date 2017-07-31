@@ -114,6 +114,11 @@ restService.post('/echo', function(req, res) {
                                 speech = 'In order to get a L1 visa please contact us at london@workpermit.com '+
                                     'or read more about it at https://goo.gl/SQvXaj ';
                                 break;
+                            case "F-1":
+                            case "M-1":
+                                speech = 'In order to get a F-1 or M-1 visa please contact us at london@workpermit.com '+
+                                    'or read more about it at https://goo.gl/AgH8PQ ';
+                                break;
                             default:
                                 speech = "Sorry we have no information about this visa in this country, yet!";
                         }
