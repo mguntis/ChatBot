@@ -70,19 +70,19 @@ restService.post('/echo', function(req, res) {
                         switch (visa){
                             case "Tier 1":
                             case "highly skilled worker visa":
-                                speech = "You mean " + visa + ": highly skilled worker visa?";
+                                speech = "You mean Tier 1: highly skilled worker visa?";
                                 break;
                             case "Tier 2":
                             case "skilled worker visa":
-                                speech = "You mean " + visa + ": skilled worker visa?";
+                                speech = "You mean Tier 2: skilled worker visa?";
                                 break;
                             case "Tier 4":
                             case "student visa":
-                                speech = "You mean " + visa + ": student visa?";
+                                speech = "You mean Tier 4: student visa?";
                                 break;
                             case "Tier 5":
-                            case "tempory woker visa":
-                                speech = "You mean " + visa + ": tempory worker visa?";
+                            case "tempory worker visa":
+                                speech = "You mean Tier 5: tempory worker visa?";
                                 break;
                             default:
                                 speech = "At the moment we have information about Tier 1, Tier 2, Tier 4 and Tier 5 visa";
