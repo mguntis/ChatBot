@@ -50,18 +50,17 @@ restService.post('/echo', function(req, res) {
                         speech = "What type of visa?";
                         break;
                     case "Tier 1":
-                        speech = 'In order to get a Tier 1 please contact us at london@workpermit.com or read more about it <a href="https://www.w3schools.com">Visit W3Schools</a>';
+                        speech = 'In order to get a Tier 1 please contact us at london@workpermit.com or read more about it https://goo.gl/dgepSH ';
                             // visa + " is UK highly skilled worker visa";
-
                         break;
                     case "Tier 2":
-                        speech = visa + " is UK skilled worker visa";
+                        speech = 'In order to get a Tier 2 please contact us at london@workpermit.com or read more about it https://goo.gl/aFktuc ';
                         break;
                     case "Tier 4":
-                        speech = visa + " is UK student visa";
+                        speech = 'In order to get a Tier 4 please contact us at london@workpermit.com or read more about it https://goo.gl/mBi7Ro ';
                         break;
                     case "Tier 5":
-                        speech = visa + " is UK temporary worker visa";
+                        speech = 'In order to get a Tier 5 please contact us at london@workpermit.com or read more about it https://goo.gl/7NRXF1 ';
                         break;
                     default:
                         speech = "About which country you need information?";
