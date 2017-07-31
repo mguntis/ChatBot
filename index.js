@@ -50,7 +50,10 @@ restService.post('/echo', function(req, res) {
                         speech = "What type of visa?";
                         break;
                     case "Tier 1":
-                        speech = visa + " is UK highly skilled worker visa";
+                        speech = "In order to get a Tier 1 please contact us at london@workpermit.com"+
+                            +" or read more about it <a href=\"https:\/\/www.w3schools.com\">Visit W3Schools</a>";
+                            // visa + " is UK highly skilled worker visa";
+
                         break;
                     case "Tier 2":
                         speech = visa + " is UK skilled worker visa";
