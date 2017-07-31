@@ -69,15 +69,19 @@ restService.post('/echo', function(req, res) {
                     case "United Kingdom of Great Britain and Northern Ireland":
                         switch (visa){
                             case "Tier 1":
+                            case "highly skilled worker visa":
                                 speech = "You mean " + visa + ": highly skilled worker visa?";
                                 break;
                             case "Tier 2":
+                            case "skilled worker visa":
                                 speech = "You mean " + visa + ": skilled worker visa?";
                                 break;
                             case "Tier 4":
+                            case "student visa":
                                 speech = "You mean " + visa + ": student visa?";
                                 break;
                             case "Tier 5":
+                            case "tempory woker visa":
                                 speech = "You mean " + visa + ": tempory worker visa?";
                                 break;
                             default:
@@ -87,19 +91,19 @@ restService.post('/echo', function(req, res) {
                     case "United States of America":
                         switch (visa){
                             case "E2":
-                                speech = "You mean " + visa + ": highly skilled worker visa?";
+                                speech = "You mean " + visa + ": treaty investor visa?";
                                 break;
                             case "E1":
-                                speech = "You mean " + visa + ": skilled worker visa?";
+                                speech = "You mean " + visa + ": treaty trader visa?";
                                 break;
                             case "E3":
-                                speech = "You mean " + visa + ": student visa?";
+                                speech = "You mean " + visa + ": specialty occupation professionals visa?";
                                 break;
                             case "L1":
-                                speech = "You mean " + visa + ": tempory worker visa?";
+                                speech = "You mean " + visa + ": intra-company transferee visa?";
                                 break;
                             default:
-                                speech = "Sorry we have no information about this visa in this country!";
+                                speech = "Sorry we have no information about this visa in this country, yet!";
                         }
                         break;
                     default:
